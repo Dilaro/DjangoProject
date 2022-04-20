@@ -1,0 +1,212 @@
+body {
+    background: url('main-bg.png' );
+    background-size: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*Стили layout.html*/
+nav {  
+    background-color: rgb(11, 95, 36);
+    height: 50px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-fixed-top {
+    height: 50px;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.page {
+    background: #ffffff;
+    padding: 20px 50px;
+    box-shadow: 0px -20px 20px 0px rgb(50 50 50 / 10%);
+    margin-bottom: 10px;
+    margin-top: 80px;
+    z-index: 2;
+    position: relative;
+    min-height: 1150px;
+}
+
+.body-content {
+    padding-bottom: 200px;
+}
+
+.footer p{
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 500px;
+}
+
+.footer-bg img {
+    color: white;
+    left: 0;
+    top: 800px;
+    bottom: 1000px;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    flex: 0 0 auto;
+}
+
+.footer-font {
+    color: white;
+}
+
+/*Стили index.html*/
+#main-page-bg img{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 2100px;
+    z-index: -1;
+}
+
+.page-text {
+    font-size: 16px;
+}
+
+.page-text h3{
+    font-weight: bold;
+}
+
+.carousel slide {
+    width: 100%;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item a {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(11, 95, 36);
+    border: none;
+}
+
+.item p {
+    font-weight: bold;
+}
+
+/*Стили contact.html*/
+.contact-page-bg img {
+    background: url('app/static/app/content/contact.jpg');
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 1200px;
+    z-index: -1;
+}
+
+/*Стили links.html*/
+.park-links li {
+    list-style-type: none;
+}
+
+.park-links img {
+    width: 100px;
+}
+
+/*Cтили about.html*/
+.headers-align {
+    text-align: center;
+}
+
+.text-about {
+    font-size: 16px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/*Стили pool.html*/
+.delete-style-type {
+    list-style-type: none;
+}
+
+/*Стили blogpost.html*/
+h5 {
+    font-weight: bold; 
+    color: rgb(11, 95, 36);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.btn-primary {
+    background-color: white;
+    border-color: rgb(11, 95, 36);
+    color: black;
+}

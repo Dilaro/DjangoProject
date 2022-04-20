@@ -1,0 +1,109 @@
+{% extends "app/layout.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+    {% if form != None %}
+<div class="headers-align">
+    <h1>Помогите нам улучшить наш сайт.</h1>
+    <br />
+    <hr />
+</div>
+
+<div>
+    <form method="post">
+        {% csrf_token %}
+        <label for="{{form.name.id_for_label}}">{{form.name.label}}:</label>
+        {{form.name}}<br /><br />
+        <label for="{{form.city.id_for_label}}">{{form.city.label}}:</label>
+        {{form.city}}<br /><br />
+        <label for="{{form.choice.id_for_label}}">{{form.choice.label}}:</label>
+        {{form.choice}}<br /><br />
+        <label for="{{form.job.id_for_label}}">{{form.job.label}}:</label>
+        {{form.job}}<br /><br />
+        <label for="{{form.internet.id_for_label}}">{{form.internet.label}}:</label>
+        {{form.internet}}<br /><br />
+        <label for="{{form.notice.id_for_label}}">{{form.notice.label}}:</label>
+        {{form.notice}}<br /><br />
+        <label for="{{form.email.id_for_label}}">{{form.email.label}}:</label>
+        {{form.email}}<br /><br />
+        <label for="{{form.message.id_for_label}}">{{form.message.label}}:</label>
+        {{form.message}}<br /><br />
+        <input class="save btn btn-default" id="submit-form" type="submit" value="Отправить" />
+    </form>
+</div>
+    {% else %}
+<div class="headers-align">
+    <br /><h1>Благодарим за предоставленную информацию!</h1>
+    <h3>Вы сообщили о себе следующее:</h3>
+</div>
+<div class="page">
+    <ul class="delete-style-type">
+        <li><span>Имя:</span> {{date.name}}</li>
+        <li><span>Город:</span> {{date.city}}</li>
+        <li><span>Понравился ли сайт:</span> {{date.choice}}</li>
+        <li><span>Работа:</span> {{date.job}}</li>
+        <li><span>В интернете:</span> {{date.internet}}</li>
+        <li><span>Получатель новости сайта на e-mail:</span> {{date.notice}}</li>
+        <li><span>Ваш e-mail:</span> {{date.email}}</li>
+        <li><span>Советы по улучшению нашего сайта:</span> {{date.message}}</li>
+    </ul>
+</div>
+    {% endif %}
+
+
+
+<script>
+    function mouse_area() {
+        $('#submit-form').css('color', 'red');
+    }
+
+    function mouse_area_out() {
+        $('#submit-form').css('color', 'black');
+    }
+
+    function text_focus1() {
+        $('#id_name').css('background-color', 'gray');
+    }
+
+    function text_blur1() {
+        $('#id_name').css('background-color', 'white');
+    }
+
+    function text_focus2() {
+        $('#id_city').css('background-color', 'gray');
+    }
+
+    function text_blur2() {
+        $('#id_city').css('background-color', 'white');
+    }
+
+    function text_focus3() {
+        $('#id_job').css('background-color', 'gray');
+    }
+
+    function text_blur3() {
+        $('#id_job').css('background-color', 'white');
+    }
+
+    function text_focus4() {
+        $('#id_email').css('background-color', 'gray');
+    }
+
+    function text_blur4() {
+        $('#id_email').css('background-color', 'white');
+    }
+
+    $('#submit-form').mouseover(mouse_area);
+    $('#submit-form').mouseout(mouse_area_out);
+    $('#id_name').focus(text_focus1);
+    $('#id_name').blur(text_blur1);
+    $('#id_city').focus(text_focus2);
+    $('#id_city').blur(text_blur2);
+    $('#id_job').focus(text_focus3);
+    $('#id_job').blur(text_blur3);
+    $('#id_email').focus(text_focus4);
+    $('#id_email').blur(text_blur4);
+</script>
+{% endblock %}

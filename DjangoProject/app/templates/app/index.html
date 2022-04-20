@@ -1,0 +1,127 @@
+﻿{% extends "app/layout.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+<div class="headers-align">
+    <h1>{{ title }}</h1>
+    <br />
+    <hr />
+</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="{% static 'app/content/slide1.jpg'%} " alt="Первый слайд" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Баргузинский заповедник
+                    <a class="btn btn-default" href="https://moiarussia.ru/top-5-luchshih-zapovednikov-rossii/">
+                        Читать далее
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'app/content/slide2.jpg'%}" alt="Второй слайд" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Алтайский заповедник
+                    <a class="btn btn-default" href="https://dah-sl.ru/menu/news/samye-krasivye-zapovedniki-rossii/">
+                        Читать далее
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src=" {% static 'app/content/slide3.jpg'%} " alt="Третий слайд" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Байкальский заповедник
+                    <a class="btn btn-default" href="https://moiarussia.ru/top-5-luchshih-zapovednikov-rossii/">
+                        Читать далее
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src=" {% static 'app/content/slide4.jpg'%} " alt="Четвертый слайд" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Кузнецкий Алатау
+                    <a class="btn btn-default" href="https://dah-sl.ru/menu/news/samye-krasivye-zapovedniki-rossii/">
+                        Читать далее
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<hr />
+<div class="row">
+    <h3>ЭКОЦЕНТР «РОСЗАПОВЕДЦЕНТР»</h3>
+    <p>
+        ЭкоЦентр «<b>РОСЗАПОВЕДЦЕНТР</b>» – объединение профессионалов заповедного дела и их единомышленников
+        в целях организации общественной поддержки особо охраняемых природных территорий России.
+
+        Заповедники и национальные парки – уникальная ценность нашей страны.
+        Мы рассказываем, убеждаем и доказываем, что завтрашний день нашей страны
+        немыслим без сохранения и развития системы особо охраняемых территорий.
+        ООПТ занимают более 13% от площади Российской Федерации, вносят ключевой
+        вклад в стабилизацию экологической обстановки на Земле, в сохранение благоприятной
+        среды для жизни людей. Они сохраняют те ценности, потеря которых невосполнима.
+
+        Объединение всех, кто работает для сохранения природного и культурного наследия России,
+        кто помогает его сберечь и преумножить - вот основная цель нашего ЭкоЦентра.
+        Особое внимание – детям, молодежи, ведь за ними будущее.
+    </p>
+    <p>
+        <b>Основные направления деятельности:</b>
+        <ul>
+            <li>Развитие общественного движения в поддержку заповедных территорий</li>
+            <li>Обучение профессионалов заповедного дела</li>
+            <li>Заповедный туризм</li>
+            <li>Экологические тропы и визит-центры</li>
+            <li>Организация индивидуального волонтерства</li>
+            <li>Корпоративное волонтерство</li>
+        </ul>
+    </p>
+    <p>
+        С течением времени, чтобы охватить больше важных задач по поддержке заповедных территорий,
+        эколого-просветительский центр «Заповедники» развился до целой группы организаций и проектов.
+
+        Так, эколого-просветительской работой со школьниками занимается Движение друзей заповедных островов.
+        Это неформальное общественное объединение взрослых и детей, помогающих сохранению заповедной природы и культурного наследия России.
+
+        Кроме того, был создан благотворительный просветительский фонд «Заповедное посольство»,
+        содействующий эффективной работе ООПТ и раскрывающий обществу потенциал заповедных территорий
+        для блага природы и людей. Программы Фонда нацелены на сохранение природного и культурного наследия,
+        спасение редких видов, помощь работникам заповедной системы, содействие бизнесу в реализации программ
+        социальной и экологической ответственности, и др.
+
+        Особые, экологичные путешествия в нетронутую природу предлагает проект «Заповедный туризм».
+        Это туры на заповедные территории, которые позволяют любоваться красотой природы,
+        оживлять местные культурные традиции, помогать сохранять островки всего живого на Земле.
+        Каждый тур построен так, что приносит пользу не только участникам, но и заповедным территориям,
+        и тем людям, что проживают рядом с ними.
+
+        Наконец, сувениры из заповедников и национальных парков со всех концов страны собрал в своем
+        каталоге проект «Заповедные сувениры». Покупая эти уникальные изделия, вы поддерживаете фонд
+        «Заповедное посольство» и его программы помощи заповедникам и паркам России.
+    </p>
+</div>
+
+{% endblock %}

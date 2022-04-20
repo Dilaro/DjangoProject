@@ -1,0 +1,21 @@
+﻿{% extends "app/layout.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="headers-align">
+    <h1>{{ message }}</h1>
+    <br />
+    <hr />
+</div>
+
+<div class="park-links">
+    <ul>
+        <li><a href="https://baikalzapovednik.ru/" target="_blank"><img src="{% static 'app/content/logo_site_1.ico' %}" alt="Logo Site-1" />Байкальский заповедник</a></li>
+        <li><a href="http://www.kuz-alatau.ru/" target="_blank"><img src="{% static 'app/content/logo_site_2.png' %}" alt="Logo Site-2" />Кузнецкий Алатау</a></li>
+    </ul>
+</div>
+
+
+{% endblock %}

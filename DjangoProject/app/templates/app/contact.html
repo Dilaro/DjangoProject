@@ -1,0 +1,31 @@
+﻿{% extends "app/layout.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+<div class="headers-align">
+    <h1>{{ title }}</h1>
+    <br />
+    <hr />
+    <h2>{{ message }}</h2>
+
+</div>
+
+<div class="page-text">
+    <h3>Наш адрес:</h3>
+    <address>
+        <b>
+            117335, Москва, ул. Архитектора Власова, д.3 (м. Профсоюзная)<br />
+            <abbr title="Телефон">Телефон:</abbr>
+            8 (495) 626-28-57
+        </b>
+    </address>
+
+    <address>
+        <strong>Служба поддержки:</strong><a href="mailto:Support@example.com">Support@example.com</a><br />
+        <!--            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>-->
+    </address>
+</div>
+
+
+{% endblock %}
